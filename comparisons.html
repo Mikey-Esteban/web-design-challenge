@@ -16,55 +16,66 @@
         }
 
         .header {
-          margin-top: -4%;
+            margin-top: -4%;
         }
 
         #description {
             font-size: 14px;
         }
+
+        @media (min-width: 992px) {
+            .tester {
+                display: inline;
+            }
+        }
     </style>
 </head>
 
 <body class="bg-light">
-    <section class="navigation bg-white">
-        <nav class="navbar navbar-expand-sm navbar-white bg-white">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <a class="btn btn-lg btn-info main-button" href="index.html" role="button">Latitude</a>
-                </div>
-                <div>
-                    <ul class="nav">
-                        <li class="dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots
-														<span class="caret"></span>
-													</a>
-                            <ul class="dropdown-menu">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="temp.html">Temperature</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="humidity.html">Humidity</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="cloudiness.html">Cloudiness</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="windspeed.html">Wind Speed</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="comparisons.html">Comparisons</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="data.html">Data</a>
-                        </li>
-                    </ul>
-                </div>
-
+    <!-- <section class="navigation bg-white"> -->
+    <nav class="navbar navbar-expand-sm navbar-light bg-white">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="btn btn-lg btn-info main-button" href="index.html" role="button">Latitude</a>
             </div>
-        </nav>
-    </section>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <li class="dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots
+                            <span class="caret"></span>
+                          </a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item">
+                                <a class="nav-link" href="temp.html">Temperature</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="humidity.html">Humidity</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="cloudiness.html">Cloudiness</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="windspeed.html">Wind Speed</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="comparisons.html">Comparisons</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="data.html">Data</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    <!-- </section> -->
     <section class="content">
         <div class="row">
             <div class="offset-lg-1 col-lg-10 bg-white">
@@ -78,17 +89,17 @@
                         <div class="col-lg-6">
                             <a href="temp.html">
                                 <h5 class="text-info">vs. Max Temperature</h3><img src="Resources/MaxTempvsLat.png" class="landing-img float-center" alt="Temp vs Lat">
-																				</a>
+                                </a><hr class="tester">
 																		</div>
 																		<div class="col-lg-6">
 																				<a href="humidity.html">
 																				<h5 class="text-info">vs. Humidity</h3><img src="Resources/HumidityvsLat.png" class="landing-img float-center" alt="Humidity vs Lat">
-																				</a>
+																				</a><hr class="tester">
 																		</div>
 																		<div class="col-lg-6">
 																				<a href="cloudiness.html">
 																				<h5 class="text-info">vs. Cloudiness</h3><img src="Resources/CloudinessvsLat.png" class="landing-img float-center" alt="Cloudiness vs Lat">
-																				</a>
+																				</a><hr class="tester">
 																		</div>
 																		<div class="col-lg-6">
 																				<a href="windspeed.html">
