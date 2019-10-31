@@ -9,33 +9,33 @@
 }
 
 .main-button {
-  margin-top: -15px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  margin-bottom: -9px;
-  margin-left: 50px;
+  margin-top: -5%;
+  padding-top: 8%;
+  padding-bottom: 8%;
+  margin-bottom: -5%;
+  margin-left: 25%;
 }
 
 .header {
   text-align: left;
-  padding-top: 35px;
+  padding-top: 8%;
   padding-left: 2%;
 }
 
 .left_box {
-  height: 550px;
-  margin-right: -50px;
+  height: 50%;
+  margin-right: -5%;
 }
 
 .right_box {
-  height: 475px;
-  padding: 10px;
+  height: 40%;
+  padding: 1%;
 }
 
 .img-fluid {
   max-width: 65%;
   height: auto;
-  margin-bottom: 1px;
+  margin-bottom: 1%;
 }
 
 .landing-img {
@@ -46,7 +46,7 @@
 
 .info {
   text-align: center;
-  padding-top: 30px;
+  padding-top: 2%;
 }
 
 .info a:hover{
@@ -55,7 +55,7 @@
 
 .sigline {
   text-align: center;
-  padding-top: 25px;
+  padding-top: 2%;
 }
 
 .stripline {
@@ -64,5 +64,16 @@
 }
 
 .page-footer {
-  padding-bottom: 15px;
+  padding-bottom: 2%;
+}
+
+
+@media (max-width: 991.98px) {
+  .info {
+    color:red;
+  }
+
+  .landing-img {
+    max-width:25%;
+  }
 }
