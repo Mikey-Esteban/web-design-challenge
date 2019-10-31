@@ -1,85 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width-device-width, initial-scale=1, shrink-to-fit=no">
-	<title>Comparisons</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Comparisons</title>
 
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-	<link rel="stylesheet" href="custom_styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="custom_styles.css">
 
-	<style type="text/css">
-    .landing-img {
-      max-width: 90%;
-      height: auto;
-    }
+    <style type="text/css">
+        .landing-img {
+            max-width: 90%;
+            height: auto;
+        }
 
-		#description {
-			font-size: 14px;
-		}
-	</style>
+        #description {
+            font-size: 14px;
+        }
+    </style>
 </head>
+
 <body class="bg-light">
-	<section class="navigation bg-white">
-			<nav class="navbar navbar-expand-sm navbar-white bg-white">
-					<div class="container-fluid">
-							<div class="navbar-header">
-									<a class="btn btn-lg btn-info main-button" href="index.html" role="button">Latitude</a>
-							</div>
-							<div>
-									<ul class="nav">
-											<li class="dropdown">
-													<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots
+    <section class="navigation bg-white">
+        <nav class="navbar navbar-expand-sm navbar-white bg-white">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="btn btn-lg btn-info main-button" href="index.html" role="button">Latitude</a>
+                </div>
+                <div>
+                    <ul class="nav">
+                        <li class="dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots
 														<span class="caret"></span>
 													</a>
-													<ul class="dropdown-menu">
-															<li class="nav-item">
-																	<a class="nav-link" href="temp.html">Temperature</a>
-															</li>
-															<li class="nav-item">
-																	<a class="nav-link" href="humidity.html">Humidity</a>
-															</li>
-															<li class="nav-item">
-																	<a class="nav-link" href="cloudiness.html">Cloudiness</a>
-															</li>
-															<li class="nav-item">
-																	<a class="nav-link" href="windspeed.html">Wind Speed</a>
-															</li>
-													</ul>
-											</li>
-											<li class="nav-item">
-													<a class="nav-link" href="comparisons.html">Comparisons</a>
-											</li>
-											<li class="nav-item">
-													<a class="nav-link" href="data.html">Data</a>
-											</li>
-									</ul>
-							</div>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="temp.html">Temperature</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="humidity.html">Humidity</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="cloudiness.html">Cloudiness</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="windspeed.html">Wind Speed</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="comparisons.html">Comparisons</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="data.html">Data</a>
+                        </li>
+                    </ul>
+                </div>
 
-					</div>
-			</nav>
-	</section>
-		<section class="content">
-						<div class="row">
-									<div class="offset-1 col-md-10 bg-white">
-													<div class="header">
-																<h3 class="text-info">Comparison: Latitude vs X</h3>
-																<hr>
-																<p id="description">Click any plot to get an in-depth analysis</p>
-													</div>
-													<div class="info">
-																<div class="row">
-																		<div class="col-md-6">
-																				<h5 class="text-info">vs. Max Temperature</h3><img src="Resources/MaxTempvsLat.png" class="landing-img float-center" alt="Temp vs Lat">
+            </div>
+        </nav>
+    </section>
+    <section class="content">
+        <div class="row">
+            <div class="offset-1 col-md-10 bg-white">
+                <div class="header">
+                    <h3 class="text-info">Comparison: Latitude vs X</h3>
+                    <hr>
+                    <p id="description">Click any plot to get an in-depth analysis</p>
+                </div>
+                <div class="info">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <a href="temp.html">
+                                <h5 class="text-info">vs. Max Temperature</h3><img src="Resources/MaxTempvsLat.png" class="landing-img float-center" alt="Temp vs Lat">
+																				</a>
 																		</div>
 																		<div class="col-md-6">
+																				<a href="humidity.html">
 																				<h5 class="text-info">vs. Humidity</h3><img src="Resources/HumidityvsLat.png" class="landing-img float-center" alt="Humidity vs Lat">
+																				</a>
 																		</div>
 																		<div class="col-md-6">
+																				<a href="cloudiness.html">
 																				<h5 class="text-info">vs. Cloudiness</h3><img src="Resources/CloudinessvsLat.png" class="landing-img float-center" alt="Cloudiness vs Lat">
+																				</a>
 																		</div>
 																		<div class="col-md-6">
+																				<a href="windspeed.html">
 																				<h5 class="text-info">vs. Windspeed</h3><img src="Resources/WindSpeedvsLat.png" class="landing-img float-center" alt="WindSpeed vs Lat">
+																				</a>
 																		</div>
 																</div>
 													</div>
