@@ -1,0 +1,27 @@
+{% extends "vs_layout.html" %}
+
+
+{% block title %}
+Temperature vs Latitude
+{% endblock %}
+
+{% block heading %}
+Temperature
+{% endblock %}
+
+{% block img_src %}
+/static/images/MaxTempvsLat.png
+{% endblock %}
+
+{% block img_alt %}
+Temperature vs Lat
+{% endblock %}
+
+{% block description %}
+Temperature follows a curve where the closer to the equator one is, the warmer the overall temperature. Presumably, since this dataset is pulled in October,
+  the overall temperatures in the northern hemisphere are lower than the souther hemisphere (almost summertime).
+{% endblock %}
+
+{% block border_temp %}
+border border-info
+{% endblock %}
